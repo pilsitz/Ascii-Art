@@ -1,0 +1,27 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .img-container {
+        text-align: center;
+        display: block;
+        font-family: 'Courier New', 'Courier New';
+        font-size: 20px;
+    }
+</style>
+
+
+<body>
+    <span class="img-container">
+        <img src="{{ url_for('static', filename='images/output.png') }}" height="50%" width="50%">
+    </span>
+
+    <span class="img-container">
+        <a href="{{ url_for('static', filename="images/output.png") }}" download="output.png">Click here to download your image</a>
+
+    </span>
+</body>
+
+{% endblock %}

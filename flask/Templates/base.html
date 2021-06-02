@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Name in the tab-->
+    <title>ASCII ART </title>
+
+    <!-- Favicon (tab icone)-->
+    <link rel="icon" href="https://img.icons8.com/nolan/64/python.png" type="image/x-icon" />
+</head>
+
+<style>
+    nav {
+        width: 100%;
+        height: 50px;
+        background-color:grey;
+    }
+    
+    nav a {
+        display: block;
+        float: left;
+        /*We're just setting up fonts settings here*/
+        font-family:'Courier New';
+        font-size: 15px;
+        color: white;
+        /*Padding Our Box*/
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        /* text-decoration: none; */
+
+    }
+    nav a:hover {
+        /*Box Method Test AKA handicap*/
+        background-color:lightgray;
+        border: 1px solid #000;
+
+    }
+
+    #logo {
+        /*font*/
+        font-family: 'Courier New', 'Courier New';
+        font-size: 38px;
+        letter-spacing: -2px;
+        text-shadow: 1px 1px 2px #FFFFFF;
+        /*box*/
+        padding-left: 20px;
+        padding-right: 40px;
+        margin-right: 10px;
+        margin-top: -20px;
+    }
+</style>
+
+<!-- CSS for footer-->
+<style>
+
+    #footer {
+        text-align: center;
+        background-color: grey;
+        color: #ffff;
+        padding: 10px;
+        font-family: 'Courier New';
+    }
+</style>
+
+
+<body>
+    <!-- <a href="/index"> Home </a><a href="/upload"> Upload </a> -->
+    <div>
+        <nav>
+            <a id="logo" href="#">ASCII ART GENERATOR</a>
+            <a href="/index">HOME</a>
+            <a href="/upload">ASCII GENERATOR</a>
+        </nav>
+    </div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }} </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+    <!-- ajout footer en bas de page-->
+    <div id="footer">
+        Contact: <a href="https://www.linkedin.com/in/dimitri-navarro/">Dimitri Navarro</a>
+        <br>
+        This application does not record your data.
+    </div>
+</body>
+</html>

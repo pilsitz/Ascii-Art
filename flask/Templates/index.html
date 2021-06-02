@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- CSS for columns + text -->
+<style>
+
+    .column {
+        float: left;
+        width: 33%;
+        padding: 1px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+ 
+    h5 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 140%;
+    }
+</style>
+
+
+<div class="row">
+    <div class="column">
+        <h5>STEP 1</h5>
+        <h5>Go on the ASCII Generator Tab. </h5>
+    </div>
+    <div class="column">
+        <h5>STEP 2</h5>
+        <h5>Select the image you want to transform. <br>Click on the Upload button.</h5>
+    </div>
+    <div class="column">
+        <h5>STEP 3</h5>
+        <h5>If you like your ascii art, download it for free!</h5>
+    </div>
+</div>
+{% endblock %}

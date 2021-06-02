@@ -1,0 +1,17 @@
+home
+|_ pilsitz
+|  |_ mysite
+|  |  |_ __init__.py
+|  |  |_ backend.py
+|  |  |_ views.py
+|  |  |_ static
+|  |  |  |_ font
+|  |  |  |  |_ impact.ttf
+|  |  |  |_images
+|  |  |  |_ new.jpg
+|  |  |  |_ output.png
+|  |  |_ templates
+|  |  |  |_ base.html
+|  |  |  |_ index.html
+|  |  |  |_ show.html
+|  |  |  |_ upload.html
